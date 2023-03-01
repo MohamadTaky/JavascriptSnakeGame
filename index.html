@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<title>Snake game</title>
+	</head>
+	<body>
+		<span id="score" class="score">0</span>
+		<div id="container" class="container">
+			<input id="inputReader" class="input" readonly autofocus />
+			<svg id="svgContainer" class="svg-container">
+				<circle id="eatPoint" class="eat-point" />
+			</svg>
+			<div id="overlay" class="overlay overlay--hidden">
+				<span class="overlay__text">You lose</span>
+				<button id="playButton" class="overlay__button">Play again</button>
+			</div>
+		</div>
+		<script type="module" src="/main.js" defer></script>
+	</body>
+</html>
